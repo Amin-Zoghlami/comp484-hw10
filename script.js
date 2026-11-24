@@ -141,6 +141,7 @@ function trigger404() {
 
   var missingImage = new Image();
 
+  // The linked image does not actually exist causing a 404 Error
   missingImage.src = "missing-devtools-image.jpg";
 }
 
@@ -152,6 +153,7 @@ function triggerTypeError() {
 
   var undefinedPet;
 
+  // Properties on an undefined variable cannot be accessed causing a TypeError 
   console.log(undefinedPet.name);
 }
 
